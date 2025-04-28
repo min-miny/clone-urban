@@ -1,0 +1,145 @@
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  position: relative;
+  transform: translateY(120px);
+  margin-top: -120px;
+}
+header a{
+  color: #fff;
+  /*! display: block; */
+}
+header .inner {
+  height: 100px;
+  padding-top: 20px;
+  align-items: flex-end;
+  width: 95%;
+  position: relative;
+}
+header .inner h1 {
+  /*! position: absolute; */
+  /*! top: 0; */
+  /*! left: calc(50% - 150px); */
+  /*! width: 300px; */
+  /*! text-align: center; */
+  order: 2;
+  /*! align-self: flex-start; */
+}
+header .inner h1 a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header .inner h1 a img{
+  display: block;
+  transform: translateY(-12px);
+  filter: brightness(100);
+  width: auto;
+}
+header .inner .wgnb{
+  order: 1;
+}
+header .inner .wgnb a.ham {
+  font-size: 0;
+  width: 36px;
+  height: 36px;
+  display: block;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+header .inner .wgnb a.ham::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  
+}
+header .inner .wgnb ul.gnb {
+  
+  /*! display: block; */
+}
+header .inner .wgnb ul.gnb > li {
+  
+}
+header .inner .wgnb ul.gnb > li h2 {
+  
+}
+header .inner .wgnb ul.gnb > li h2 a {
+  
+}
+header .inner .wgnb ul.gnb > li ul.gnbsub {
+  
+}
+header .inner .wgnb ul.gnb > li ul.gnbsub li {
+  
+}
+header .inner .wgnb ul.gnb > li ul.gnbsub li a {
+  
+}
+header .inner ul.enb {
+  order: 3;
+}
+header .inner ul.enb li {
+  
+}
+header .inner ul.enb li a {
+  color: black;
+}
+
+/* 클릭시 햄버거 */
+.wrapgnb{
+  
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapgnb ul.gnb{
+  
+  display: flex !important;
+  gap: 20px;
+}
+.wrapgnb ul.gnb > li{
+  
+}
+.wrapgnb ul.gnb > li h2{
+  font-size: 24px;
+  height: 24px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.wrapgnb ul.gnb > li h2 a{
+  display: block;
+  transform: translateY(100%);
+  transition: transform 2s;
+}
+.wrapgnb ul.gnb > li ul{
+  
+}
+.wrapgnb ul.gnb > li ul li{
+  margin-bottom: 10px;
+  height: 16px;
+  overflow: hidden;
+}
+.wrapgnb ul.gnb > li ul li a{
+  display: block;
+  transform: translateY(100%);
+  transition: transform 2s;
+}
+.translateY{
+  transform: translateY(0%) !important;
+}

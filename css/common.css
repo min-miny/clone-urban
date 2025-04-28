@@ -1,0 +1,153 @@
+address,a{
+  font-family: 'Raleway', 'Noto Sans KR', 'sans-serif';
+}
+
+.hide{
+  display: none;
+}
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder { /* WebKit browsers */
+  color:transparent;
+}
+
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:transparent;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:transparent;
+}
+
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:transparent;
+}
+
+.inner{
+    width: 80%;
+    margin: 0 auto;
+}
+.innerPadding{ /*카멜케이스방식 첫자소문자,다음단어첫자는 대문자*/
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+/* hn 태그스타일링 */
+.h2{
+    font-size: 50px;
+    font-weight: 800;
+  font-family: 'Raleway','Noto Sans KR';
+  letter-spacing: 3px;
+}
+.h3{
+  font-size: 31px;
+  font-weight: 700;
+  font-family: 'Raleway','Noto Sans KR';
+}
+.h4{
+  font-size: 27px;
+  font-weight: 700;
+  font-family: 'Raleway','Noto Sans KR';
+}
+.h5{
+  font-size: 16px;
+  font-weight: 800;
+  font-family: 'Raleway','Noto Sans KR';
+}
+p,li{
+  font-family: 'Raleway','Noto Sans KR', 'sans-serif';
+  font-size: 14px;
+}
+/* FLEX */
+.flex{
+  display: flex;
+}
+.flexBetween{
+  justify-content: space-between;
+}
+
+.flexCenter{
+  justify-content: center;
+}
+.flexAround{
+  justify-content: space-around;
+}
+.flexEven{
+  justify-content: space-evenly
+}
+.flexColumn{
+  flex-direction: column;
+}
+.flexWrap{
+  flex-wrap:wrap;
+}
+
+.flexAlignCenter{
+  align-items: center;
+}
+.flexAlignEnd{
+  align-items: flex-end;
+}
+.br{
+  display: block;
+}
+.p{
+  line-height: 1.5;
+}
+/* 패딩 */
+.padding50{
+  padding: 50px;
+}
+.padding100{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* 버튼 */
+.btn1{
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  background-color: #e72d28;
+}
+.tac{
+  text-align: center;
+}
+
+.more{
+  position: relative;
+  width: 100px;
+  text-align: left;
+  padding-right: 20px;
+}
+.more::before{
+  content:"";
+  display: block;
+  width: 30px;
+  height: 2px;
+background-color: #f00;
+/*! border: 2px solid #555; */
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  z-index: 1;
+}
+.more::after{
+  content:"";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #f00;
+  border-bottom:transparent;
+  border-left: transparent;
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 0;
+  transform: scale(0.8) rotate(45deg);
+/*   transform: scale(0.8)translate(-50%, -50%) rotate(45deg); */
+}

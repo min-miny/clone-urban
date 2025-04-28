@@ -1,0 +1,185 @@
+#title {
+  height: 100%;
+  min-height: 480px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #eee;
+}
+#title::before{
+  content:"";
+  display: block;
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  background-color: black;
+}
+/* #title::after{
+  content: "KEEP CLEAN & GREEN";
+  font-weight: 700;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: rotate(90deg);
+} */
+#title .inner {
+  width: 80%;
+  /*! height: 100%; */
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  height: 673px;
+}
+#title .wslide{
+  width: 80%;
+  z-index: 1;
+  height: 673px;
+  margin-bottom: 0;
+}
+
+#title .wslide .inner{
+  display: flex;
+}
+#title .inner h2.h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 65px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+#title .inner h2 span{
+  display: block;
+  animation-name: h2up;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+}
+@keyframes h2up{
+  0%{
+    transform: translateY(0%);
+      opacity: 1;
+  }
+  100%{
+    transform: translateY(100%);
+    opacity: 0.4;
+  }
+}
+#title .inner p.p {
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
+  overflow: hidden;
+}
+#title .inner p span{
+  display: block;
+  animation-name: pup;
+  animation-duration: 1.3s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+}
+@keyframes pup{
+  0%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  50%{
+    transform: translateY(100%);
+  }
+  100%{
+    transform: translateY(100%);
+    opacity: 0.1;
+  }
+}
+#title .inner p.p span.br {
+}
+#title .inner a{
+  color: white;
+  margin-top: 40px;
+}
+#title .inner a::before{
+  background-color:white;
+}
+#title .inner a::after{
+  border-color: white;
+}
+#title .inner iframe{
+  width: 1188px;
+  height: 668px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+/*   transform: scale(0.5);
+  transform-origin: 100% 100%; */
+}
+#title span.titleaside{
+  position: absolute;
+  right: calc(20% / 4 - 82px);
+  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  justify-content: space-between;
+}
+#title span.titleaside a.campaign{
+  transform: rotate(90deg) translateX(80px);
+  font-weight: 800;
+}
+#title span.titleaside a.scroll{
+  position: relative;
+  font-weight: 700;
+  font-size: 14px;
+}
+#title span.titleaside a.scroll::before{
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 3px solid black;
+  border-left: transparent;
+  border-top: transparent;
+  transform: scale(0.5) translateY(-15px) rotate(45deg);
+  margin: 0 auto;
+  animation-name: autoScroll2;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  color: #333;
+  position: absolute;
+  top: -20px;
+  left: calc(50% - 7.5px);
+  opacity: 0;
+}
+#title span.titleaside a.scroll::after{
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 3px solid black;
+  border-left: transparent;
+  border-top: transparent;
+  transform: scale(0.5) translateY(-15px) rotate(45deg);
+  margin: 0 auto;
+  color: #333;
+  position: absolute;
+  top: -30px;
+  left: calc(50% - 7.5px);
+  opacity: 0;
+  animation-name: autoScroll1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes autoScroll1{
+  10%{opacity: 1;}
+  100%{opacity: 0;}
+}
+@keyframes autoScroll2{
+  10%{opacity: 0;}
+  20%{opacity: 1;}
+  100%{opacity: 0;}
+}

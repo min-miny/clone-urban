@@ -1,0 +1,74 @@
+/* JQUERY x Hamburger icon */
+.menuback{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  left: 0;
+  top: 0;
+  animation-name: scalewide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform-origin: 0 0;
+  transition: left 0.5s;
+  overflow: hidden;
+}
+keyframes scalewide{
+  0%{
+    width: 0;
+  }
+  100%{
+    width:100%;
+  }
+}
+.menubackmove{
+  left: 100%;
+}
+.menuback .wrapsns{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0 30px 60px 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.menuback .copyright{
+  color: white;
+  /*! display: none; */
+  overflow: hidden;
+}
+.menuback .copyright span{
+  
+  display: block;
+  transform: translateY(100%);
+  transition: transform 1s;
+  transition-delay: 1s;
+}
+.menuback .sns{
+  /*! display: none; */
+  overflow: hidden;
+}
+.menuback .sns li{
+  transform: translateY(100%);
+  transition: transform 1s;
+  transition-delay: 1s;
+}
+/* .menuback .sns li a{
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0;
+}
+.menuback .sns li:nth-child(1) a{
+  background-image: url("../img/logo-facebook.svg");
+}
+.menuback .sns li:nth-of-type(2) a{
+  background-image: url("../img/logo-instagram.svg");
+}
+.menuback .sns li:nth-child(3) a{
+  background-image: url("../img/logo-google.svg");
+} */
